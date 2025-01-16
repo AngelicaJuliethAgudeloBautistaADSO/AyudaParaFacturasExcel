@@ -8,15 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <label for="numeros">numeros</label>
-        <input type="text" id="numeros">
+        <h2>Pasar Listado de Facturas</h2>
+        <input class="InputR" type="text" id="numeros" placeholder="Pega la lista de los numeros....">
 
-        <label for="letras">letras</label>
-        <input type="text" id="letras">
+        <input class="InputLetras" type="text" id="letras" placeholder="Ingresa la letra que quieres agregar....">
 
-        <button onclick="processInput()">Eliminar letras</button>
-        <button onclick="processInputLetras()">Añadir letra</button>
-        <input type="text" id="result" placeholder="Resultado">  
+        <input class="InputR" type="text" id="result" placeholder="Lista transformada....">  
+
+        <div class="button-container">
+            <button onclick="processInput()">Eliminar</button>
+            <button onclick="processInputLetras()">Añadir</button>
+            <button onclick="Limpiar()">Limpiar</button>
+        </div>
     </div>
 </body>
 <script src="index.js"></script>

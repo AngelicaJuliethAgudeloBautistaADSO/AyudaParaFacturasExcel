@@ -18,3 +18,9 @@ function processInputLetras() {
     console.log(resultado);
     result.value = resultado;
 }
+
+function Limpiar(){
+    InputNumeros.value="";
+    InputLetras.value="";
+    result.value="";
+}
