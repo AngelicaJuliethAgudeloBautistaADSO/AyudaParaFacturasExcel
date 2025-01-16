@@ -27,15 +27,48 @@ a{
     font-weight: bold;
     text-decoration: none;
 }
+
 .container {
     padding: 20px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "h2 h2"
+    "InputR1 InputR2 "
+    "InputR3 InputR3"
+    "button-container button-container";
+    justify-items: center;
     gap: 15px;
 }
-.InputR {
+h2{
+    grid-area: h2;
+}
+.InputR1{
+    grid-area: InputR1;
+    width: 80%;
+    height: 250px;
+    border: 1px solid #353535;
+    background-color: #353535;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.InputR2{
+    grid-area: InputR2;
+    width: 80%;
+    height: 250px;
+    border: 1px solid #353535;
+    background-color: #353535;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+.InputR3{
+    grid-area: InputR3;
     width: 80%;
     height: 250px;
     border: 1px solid #353535;
@@ -70,6 +103,7 @@ button {
     width: 80px;
 }
 .button-container {
+    grid-area: button-container;
     display: flex;
     justify-content: center;
     gap: 60px;

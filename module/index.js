@@ -14,9 +14,12 @@ function processInputLetras() {
     console.log(InputNumeros)
     console.log(InputLetras)
     const ExpresionRegular = /\d+/g;
-    const resultado = InputNumeros.value.replace(ExpresionRegular, (numero) => `${InputLetras.value}${numero}`);
+    const resultado = InputNumeros.value.replace(ExpresionRegular, (numero) => `${InputLetras.value.toUpperCase()}${numero}`);
     console.log(resultado);
     result.value = resultado;
+}
+function processInputComparar() {
+    
 }
 
 function Limpiar(){
