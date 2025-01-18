@@ -9,21 +9,7 @@ function processInput() {
     console.log(numeros);
     result.value = numeros ? `'${numeros.join("', '")}'` : '';
 }
-//AGREGA LAS LETRAS QUE SE INGRESAN EN EL INPUT "LETRAS"
-function processInputLetras() {
-    console.log(InputNumeros)
-    console.log(InputLetras)
-    const ExpresionRegular = /\d+/g;
-    const resultado = InputNumeros.value.replace(ExpresionRegular, (numero) => `${InputLetras.value.toUpperCase()}${numero}`);
-    console.log(resultado);
-    result.value = resultado;
-}
-function processInputComparar() {
-    
-}
-
 function Limpiar(){
     InputNumeros.value="";
-    InputLetras.value="";
     result.value="";
 }
