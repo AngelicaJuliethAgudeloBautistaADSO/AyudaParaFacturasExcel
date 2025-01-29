@@ -1,6 +1,5 @@
 var InputNumeros = document.getElementById('numeros');
 let result = document.getElementById('result');
-var InputLetras = document.getElementById('letras');
 //QUITA LAS LETRAS Y TIENE UN FORMATO 'NUMERO', 'NUMERO'
 function processInput() {
     console.log(InputNumeros)
@@ -13,3 +12,6 @@ function Limpiar(){
     InputNumeros.value="";
     result.value="";
 }
+
+
+

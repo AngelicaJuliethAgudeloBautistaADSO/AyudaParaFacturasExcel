@@ -1,6 +1,6 @@
 var InputNumeros = document.getElementById('numeros');
-let result = document.getElementById('result');
 var InputLetras = document.getElementById('letras');
+let result = document.getElementById('result');
 
 //AGREGA LAS LETRAS QUE SE INGRESAN EN EL INPUT "LETRAS"
 function processInputLetras() {
@@ -10,6 +10,7 @@ function processInputLetras() {
     const resultado = InputNumeros.value.replace(ExpresionRegular, (numero) => `${InputLetras.value.toUpperCase()}${numero}`);
     console.log(resultado);
     result.value = resultado;
+    
 }
 
 function Limpiar(){
